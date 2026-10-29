@@ -1,0 +1,18 @@
+# CPython 3.14.9 for macOS —— 上游地址与校验值。
+#
+# 源头是 astral-sh/python-build-standalone 的 install_only 产物（自带 pip、
+# 可整体搬移，不依赖系统 Python）。
+#
+# 这份文件默认**不用于下载**：默认从本仓库取同名的那份字节（pythondata/3.14.9/
+# <文件名>），校验值共用。只有 `--install-python-from-source`（install.sh 与
+# wave selfupdate 都支持）才会直接回上游取。
+#
+# 两条路径共用同一个文件名，所以落盘名一律取 URL 末段。
+
+[arm64]
+arm64_url = "https://github.com/astral-sh/python-build-standalone/releases/download/20261021/cpython-3.14.9+20261021-aarch64-apple-darwin-install_only.tar.gz"
+arm64_sha256 = "226d696642a8a53d03b4d5b255b1c319b1575a6d44bd723a953c9f507755e36a"
+
+[amd64]
+amd64_url = "https://github.com/astral-sh/python-build-standalone/releases/download/20261021/cpython-3.14.9+20261021-x86_64-apple-darwin-install_only.tar.gz"
+amd64_sha256 = "600cf336dd007e7c72318214fd0708a56c555b516964175df4a748e4ff0487a2"

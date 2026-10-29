@@ -1,0 +1,10 @@
+# MacWave 自带解释器的版本指针 —— 唯一的入口文件。
+#
+#   pythondata/latest.toml              现在用哪个版本的 CPython
+#   pythondata/<版本>/python_url.toml   各架构的上游地址与校验值
+#   pythondata/<版本>/<文件名>          我们自己托管的那份（默认从这里取）
+#
+# 客户端先读这里，再看本机 python/<版本> 在不在：在就直接用，一个字节都不下。
+# 所以「升级解释器」只需要改这一行。
+
+version = "3.14.9"
